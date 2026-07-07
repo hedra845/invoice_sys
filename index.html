@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>منشئ الفواتير الذكي - إنشاء فواتير احترافية مجاناً</title>
+    <meta name="description" content="أنشئ فواتير احترافية مجاناً مع منشئ الفواتير الذكي. نظام متكامل لإنشاء وإدارة الفواتير الإلكترونية." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="logo-icon">⚡</span>
+                <span class="logo-text">منشئ الفواتير الذكي</span>
+            </div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home" class="active">الرئيسية</a></li>
+                <li><a href="#features">المزايا</a></li>
+                <li><a href="#create">إنشاء فاتورة</a></li>
+                <li><a href="#history">سجل الفواتير</a></li>
+                <li><a href="#" id="openSettingsBtn">⚙️ الإعدادات</a></li>
+            </ul>
+            <div class="nav-actions">
+                <a href="#create" class="btn-cta">ابدأ الآن مجاناً</a>
+            </div>
+            <button class="nav-toggle" id="navToggle" aria-label="القائمة">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1>أنشئ فاتورة <span class="highlight">مجانية احترافية</span></h1>
+                <p class="hero-desc">الآن أصبح بإمكانك إنشاء فاتورة إلكترونية احترافية تساعدك في تنفيذ أعمالك المختلفة بدون صعوبة. لا داعي لأن تبدأ من الصفر في إنشاء فاتورتك.</p>
+                <div class="hero-buttons">
+                    <a href="#create" class="btn-primary">إنشاء فاتورة الآن</a>
+                    <a href="#features" class="btn-outline">تعرف على المزايا</a>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat"><span class="stat-number" id="totalCount">0</span><span class="stat-label">فاتورة تم إنشاؤها</span></div>
+                    <div class="stat"><span class="stat-number">100%</span><span class="stat-label">مجاني</span></div>
+                    <div class="stat"><span class="stat-number">∞</span><span class="stat-label">بدون حدود</span></div>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="invoice-card-demo">
+                    <div class="card-header-demo"><span>⚡</span> فاتورة #1001</div>
+                    <div class="card-line"></div>
+                    <div class="card-line short"></div>
+                    <div class="card-line"></div>
+                    <div class="card-line short"></div>
+                    <div class="card-amount">1,500.00 ج.م</div>
+                </div>
+            </div>
+        </div>
+        <div class="hero-wave">
+            <svg viewBox="0 0 1440 120" preserveAspectRatio="none">
+                <path d="M0,60 C360,120 720,0 1440,60 L1440,120 L0,120 Z" fill="#fff"/>
+            </svg>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features" id="features">
+        <div class="section-container">
+            <h2 class="section-title">كيف أنشئ فاتورة مجانية احترافية؟</h2>
+            <p class="section-subtitle">ستوضح لك هذه الإرشادات خطوة بخطوة كيفية إنشاء فاتورة مجانية احترافية تتضمن جميع العناصر القياسية للفاتورة الاحترافية.</p>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">📝</div>
+                    <h3>أدخل بيانات العميل</h3>
+                    <p>اسم العميل، العنوان، رقم الهاتف، والرقم الضريبي لضمان فاتورة متكاملة.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">📦</div>
+                    <h3>أضف الأصناف والخدمات</h3>
+                    <p>أضف المنتجات أو الخدمات مع الكمية والسعر وسيتم حساب الإجمالي تلقائياً.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">✍️</div>
+                    <h3>وقّع إلكترونياً</h3>
+                    <p>أضف توقيعك الإلكتروني مباشرة على الفاتورة لمزيد من الاحترافية والمصداقية.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">💾</div>
+                    <h3>احفظ واطبع</h3>
+                    <p>احفظ الفاتورة في السجل المحلي واطبعها أو صدّرها بصيغة PDF بضغطة واحدة.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Create Invoice Section -->
+    <section class="create-section" id="create">
+        <div class="section-container">
+            <h2 class="section-title">إنشاء فاتورة جديدة</h2>
+
+            <!-- Tabs -->
+            <div class="tabs">
+                <button class="tab active" data-tab="info">بيانات الفاتورة</button>
+                <button class="tab" data-tab="items">الأصناف</button>
+                <button class="tab" data-tab="signature">التوقيع</button>
+                <button class="tab" data-tab="preview">معاينة</button>
+            </div>
+
+            <form id="invoiceForm" novalidate>
+                <!-- Tab 1: Info -->
+                <div class="tab-content active" id="tab-info">
+                    <div class="form-card">
+                        <h3>بيانات المُرسِل</h3>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="senderName">اسم الشركة / المرسل</label>
+                                <input type="text" id="senderName" placeholder="مثال: شركة النور للتجارة" required />
+                            </div>
+                            <div class="form-group">
+                                <label for="senderPhone">رقم الهاتف</label>
+                                <input type="tel" id="senderPhone" placeholder="مثال: 01xxxxxxxxx" required />
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="companyLogo">شعار الشركة (Logo)</label>
+                                <input type="file" id="companyLogo" accept="image/*" />
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="senderAddress">العنوان</label>
+                                <input type="text" id="senderAddress" placeholder="مثال: شارع التحرير، القاهرة" />
+                            </div>
+                            <div class="form-group">
+                                <label for="senderTax">الرقم الضريبي / السجل التجاري</label>
+                                <input type="text" id="senderTax" placeholder="مثال: 123-456-789" />
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-card">
+                        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1.2rem; border-bottom: 2px solid var(--primary-bg); padding-bottom: .8rem;">
+                            <h3 style="margin: 0; border: none; padding: 0;">بيانات العميل</h3>
+                            <select id="savedClientsDropdown" style="width: 200px; padding: 0.3rem;">
+                                <option value="">-- اختر عميل محفوظ --</option>
+                            </select>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="clientName">اسم العميل</label>
+                                <input type="text" id="clientName" placeholder="مثال: أحمد محمد علي" required />
+                            </div>
+                            <div class="form-group">
+                                <label for="clientPhone">رقم هاتف العميل</label>
+                                <input type="tel" id="clientPhone" placeholder="مثال: 01xxxxxxxxx" />
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="clientAddress">عنوان العميل</label>
+                                <input type="text" id="clientAddress" placeholder="مثال: المعادي، القاهرة" />
+                            </div>
+                            <div class="form-group">
+                                <label for="clientTax">الرقم الضريبي للعميل</label>
+                                <input type="text" id="clientTax" placeholder="مثال: 987-654-321" />
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-card">
+                        <h3>تفاصيل الفاتورة</h3>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="invoiceNumber">رقم الفاتورة</label>
+                                <input type="text" id="invoiceNumber" placeholder="سيتم توليده تلقائياً" readonly />
+                            </div>
+                            <div class="form-group">
+                                <label for="invoiceDate">تاريخ الفاتورة</label>
+                                <input type="date" id="invoiceDate" required />
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="dueDate">تاريخ الاستحقاق</label>
+                                <input type="date" id="dueDate" />
+                            </div>
+                            <div class="form-group">
+                                <label for="currency">العملة</label>
+                                <select id="currency">
+                                    <option value="ج.م">جنيه مصري (ج.م)</option>
+                                    <option value="ر.س">ريال سعودي (ر.س)</option>
+                                    <option value="د.إ">درهم إماراتي (د.إ)</option>
+                                    <option value="$">دولار أمريكي ($)</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <button type="button" class="btn-primary btn-next" data-next="items">التالي: الأصناف ←</button>
+                </div>
+
+                <!-- Tab 2: Items -->
+                <div class="tab-content" id="tab-items">
+                    <div class="form-card">
+                        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1.2rem; border-bottom: 2px solid var(--primary-bg); padding-bottom: .8rem;">
+                            <h3 style="margin: 0; border: none; padding: 0;">الأصناف والخدمات</h3>
+                            <select id="savedProductsDropdown" style="width: 200px; padding: 0.3rem;">
+                                <option value="">-- إدراج منتج محفوظ --</option>
+                            </select>
+                        </div>
+                        <div class="items-table-wrapper">
+                            <table class="items-table" id="itemsTable">
+                                <thead>
+                                    <tr>
+                                        <th>الوصف</th>
+                                        <th>الكمية</th>
+                                        <th>السعر</th>
+                                        <th>الإجمالي</th>
+                                        <th></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><input type="text" class="item-desc" placeholder="وصف الصنف" required /></td>
+                                        <td><input type="number" class="item-qty" min="1" value="1" /></td>
+                                        <td><input type="number" class="item-price" min="0" step="0.01" value="0" /></td>
+                                        <td class="item-total">0.00</td>
+                                        <td><button type="button" class="btn-remove">✕</button></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <button type="button" id="addItemBtn" class="btn-add-item">+ إضافة صنف جديد</button>
+                        <div class="totals-box">
+                            <div class="totals-row"><span>المجموع الفرعي</span><span id="subtotal">0.00</span></div>
+                            <div class="totals-row">
+                                <span>الضريبة
+                                    <select id="taxRate">
+                                        <option value="0">0%</option>
+                                        <option value="5">5%</option>
+                                        <option value="10">10%</option>
+                                        <option value="14" selected>14%</option>
+                                        <option value="15">15%</option>
+                                    </select>
+                                </span>
+                                <span id="taxAmount">0.00</span>
+                            </div>
+                            <div class="totals-row"><span>الخصم</span><input type="number" id="discount" min="0" step="0.01" value="0" /></div>
+                            <div class="totals-row grand"><span>الإجمالي الكلي</span><span id="grandTotal">0.00</span></div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="notes">ملاحظات (اختياري)</label>
+                        <textarea id="notes" rows="3" placeholder="أية ملاحظات إضافية على الفاتورة..."></textarea>
+                    </div>
+                    <div class="btn-row">
+                        <button type="button" class="btn-outline btn-prev" data-prev="info">→ السابق</button>
+                        <button type="button" class="btn-primary btn-next" data-next="signature">التالي: التوقيع ←</button>
+                    </div>
+                </div>
+
+                <!-- Tab 3: Signature -->
+                <div class="tab-content" id="tab-signature">
+                    <div class="form-card signature-card">
+                        <h3>التوقيع الإلكتروني</h3>
+                        <p class="sig-hint">ارسم توقيعك بالماوس أو بإصبعك على الشاشة</p>
+                        <canvas id="signaturePad"></canvas>
+                        <button type="button" id="clearSignature" class="btn-outline">مسح التوقيع</button>
+                    </div>
+                    <div class="btn-row">
+                        <button type="button" class="btn-outline btn-prev" data-prev="items">→ السابق</button>
+                        <button type="button" class="btn-primary btn-next" data-next="preview">معاينة الفاتورة ←</button>
+                    </div>
+                </div>
+
+                <!-- Tab 4: Preview -->
+                <div class="tab-content" id="tab-preview">
+                    <div id="invoicePreview" class="invoice-preview-box"></div>
+                    <div class="btn-row">
+                        <button type="button" class="btn-outline btn-prev" data-prev="signature">→ تعديل</button>
+                        <button type="button" id="printInvoice" class="btn-outline">🖨️ طباعة</button>
+                        <button type="submit" class="btn-primary">💾 حفظ الفاتورة</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!-- History Section -->
+    <section class="history-section" id="history">
+        <div class="section-container">
+            <h2 class="section-title">سجل الفواتير</h2>
+            <p class="section-subtitle">جميع الفواتير التي تم إنشاؤها محفوظة هنا. يمكنك عرضها أو حذفها.</p>
+            <div class="history-table-wrapper">
+                <table class="history-table" id="historyTable">
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>رقم الفاتورة</th>
+                            <th>العميل</th>
+                            <th>التاريخ</th>
+                            <th>الإجمالي</th>
+                            <th>الإجراءات</th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+            </div>
+            <p class="empty-msg" id="emptyMsg">لا توجد فواتير بعد. ابدأ بإنشاء أول فاتورة!</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-brand">
+                <span class="logo-icon">⚡</span>
+                <span class="logo-text">منشئ الفواتير الذكي</span>
+            </div>
+            <p>جميع الحقوق محفوظة © 2026 منشئ الفواتير الذكي</p>
+        </div>
+    </footer>
+
+    <!-- Settings Modal -->
+    <div id="settingsModal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal" id="closeSettingsBtn">&times;</span>
+            <h2>إعدادات النظام</h2>
+            <div class="settings-tabs">
+                <button class="s-tab active" data-stab="profile">بيانات الشركة</button>
+                <button class="s-tab" data-stab="clients">العملاء</button>
+                <button class="s-tab" data-stab="products">المنتجات</button>
+            </div>
+            
+            <div class="s-tab-content active" id="stab-profile">
+                <form id="profileForm">
+                    <div class="form-group"><label>اسم الشركة</label><input type="text" id="profName" /></div>
+                    <div class="form-group"><label>رقم الهاتف</label><input type="text" id="profPhone" /></div>
+                    <div class="form-group"><label>العنوان</label><input type="text" id="profAddress" /></div>
+                    <div class="form-group"><label>الرقم الضريبي</label><input type="text" id="profTax" /></div>
+                    <div class="form-group"><label>اللون الرئيسي</label><input type="color" id="themeColor" /></div>
+                    <div class="form-group">
+                        <label>نموذج الفاتورة</label>
+                        <select id="invoiceTemplate">
+                            <option value="modern">حديث</option>
+                            <option value="classic">كلاسيكي</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="btn-primary">حفظ البيانات الافتراضية</button>
+                </form>
+            </div>
+            
+            <div class="s-tab-content" id="stab-clients">
+                <form id="addClientForm" style="margin-bottom: 20px; padding: 10px; background: #f8fafc; border-radius: 8px;">
+                    <h4>إضافة عميل جديد</h4>
+                    <div style="display:flex; gap:10px; margin-bottom:10px;">
+                        <input type="text" id="newClientName" placeholder="اسم العميل" required style="flex:1" />
+                        <input type="text" id="newClientPhone" placeholder="رقم الهاتف" style="flex:1" />
+                    </div>
+                    <button type="submit" class="btn-outline" style="width:100%">إضافة العميل</button>
+                </form>
+                <ul id="clientsList" style="list-style:none; padding:0;"></ul>
+            </div>
+            
+            <div class="s-tab-content" id="stab-products">
+                <form id="addProductForm" style="margin-bottom: 20px; padding: 10px; background: #f8fafc; border-radius: 8px;">
+                    <h4>إضافة منتج/خدمة</h4>
+                    <div style="display:flex; gap:10px; margin-bottom:10px;">
+                        <input type="text" id="newProdName" placeholder="الاسم/الوصف" required style="flex:2" />
+                        <input type="number" id="newProdPrice" placeholder="السعر" required style="flex:1" />
+                    </div>
+                    <button type="submit" class="btn-outline" style="width:100%">إضافة المنتج</button>
+                </form>
+                <ul id="productsList" style="list-style:none; padding:0;"></ul>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

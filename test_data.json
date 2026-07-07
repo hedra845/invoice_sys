@@ -1,0 +1,6 @@
+{
+    "companyName": "Test Company",
+    "items": [
+        {"name": "Item 1", "desc": "Desc 1", "price": "10", "quantity": "1"}
+    ]
+}
